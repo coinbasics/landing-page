@@ -2,8 +2,10 @@ import Link from "next/link";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Disclosure } from "@headlessui/react";
 import Button from "../Button/Button";
+import { useRouter } from "next/router";
 
 const Navigation = () => {
+  const router = useRouter();
   return (
     <Disclosure
       as="nav"
@@ -28,7 +30,7 @@ const Navigation = () => {
               <div className="flex items-center justify-center md:flex-none md:items-stretch md:justify-start">
                 <div className="flex flex-shrink-0 items-center">
                   <img
-                    className="block h-10 md:h-6 w-auto"
+                    className="block h-10 md:h-8 w-auto"
                     src="/coinbasicslogo.png"
                     alt="Coinbasics Logo"
                   />
@@ -55,7 +57,10 @@ const Navigation = () => {
                     <Button
                       OnClick={(e) => {
                         e.preventDefault();
-                        router.push("https://dashboard.commenda.io/");
+                        console.log("clicked");
+                        router.push(
+                          "https://substack.com/profile/124004916-coinbasics"
+                        );
                       }}
                       text="Subscribe"
                     />
@@ -70,7 +75,7 @@ const Navigation = () => {
               <Disclosure.Button
                 as="a"
                 href="#"
-                className="block border-l-4 border-commenda-blue py-2 pl-6 pr-4 text-base font-medium text-gray-500"
+                className="block border-l-4 border-primary py-2 pl-6 pr-4 text-base font-medium text-gray-500"
               >
                 Home
               </Disclosure.Button>

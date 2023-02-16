@@ -30,7 +30,7 @@ const Footer = () => {
           className="w-36 mb-4 md:hidden"
         />
         <p className="text-black-200 text-base font-normal leading-normal text-center md:text-left mb-6">
-          © 2021 Commenda Technologies, Inc. All rights reserved.
+          © 2021 CoinbasicsHQ. All rights reserved.
         </p>
         <div className="flex space-x-5 md:hidden">
           <Link href="https://twitter.com/CoinbasicsHQ" target="_blank">
