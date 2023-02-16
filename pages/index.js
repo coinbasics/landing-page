@@ -1,4 +1,8 @@
 import Head from "next/head";
+import Navigation from "../components/Navigation/Navigation";
+import Header from "../components/Header/Header";
+import Testimonials from "../components/Testimonials/Testimonials";
+import Footer from "../components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -12,11 +16,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/coinbasics.png" />
       </Head>
-      <div className="font-inter main">
-        {/* <Navigation />
+      <div className="font-poppins main">
+        <Navigation />
         <Header />
-
-        <Footer /> */}
+        <Testimonials />
+        <Footer />
       </div>
     </>
   );

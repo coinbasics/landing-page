@@ -19,11 +19,12 @@ module.exports = {
         faq: "0px 4px 18px rgba(0, 0, 0, 0.07)",
       },
       fontFamily: {
-        inter: ["Inter", ...fontFamily.sans],
+        poppins: ["Poppins", ...fontFamily.sans],
       },
       colors: {
-        primary: "#1c64f2",
-        secondary: "#f9fafb",
+        primary: "#4072FE",
+        secondary: "#00D2FF",
+        white: "#fff",
         black: {
           100: "#111928",
           200: "#6b7280",
