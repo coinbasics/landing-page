@@ -3,6 +3,7 @@ import Navigation from "../components/Navigation/Navigation";
 import Header from "../components/Header/Header";
 import Testimonials from "../components/Testimonials/Testimonials";
 import Footer from "../components/Footer/Footer";
+import Newsletters from "../components/Newsletters/Newsletters";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <Navigation />
         <Header />
         <Testimonials />
+        <Newsletters />
         <Footer />
       </div>
     </>

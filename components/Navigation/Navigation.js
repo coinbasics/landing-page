@@ -55,7 +55,7 @@ const Navigation = () => {
 
                   <div className="absolute inset-y-0 right-0 flex items-center pr-0 md:static md:inset-auto md:ml-6 md:pr-2 md:pr-0">
                     <Button
-                      OnClick={(e) => {
+                      click={(e) => {
                         e.preventDefault();
                         console.log("clicked");
                         router.push(
