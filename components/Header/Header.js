@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Input from "../Input/Input";
+import { BsTwitter, BsLinkedin } from "react-icons/bs";
 
 const HomeHeader = () => {
   //   const [hasSubmittedEmail, setHasSubmittedEmail] = useState(false);
@@ -34,6 +35,21 @@ const HomeHeader = () => {
               Privacy Policy.
             </Link>{" "}
           </small>
+        </div>
+        <p className="text-gray-500 ml-1">
+          Read By Top VCs, Founders & Executives.
+        </p>
+        <div className="flex items-center py-2">
+          <Link href="https://twitter.com/CoinbasicsHQ" target="_blank">
+            <BsTwitter className="h-5 w-5 text-black-200 hover:text-primary transition-all duration-200" />
+          </Link>{" "}
+          &nbsp;&nbsp;
+          <Link
+            href="https://www.linkedin.com/company/coinbasics/"
+            target="_blank"
+          >
+            <BsLinkedin className="h-5 w-5 text-black-200 hover:text-primary transition-all duration-200" />
+          </Link>
         </div>
       </div>
 

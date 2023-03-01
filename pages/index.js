@@ -20,8 +20,8 @@ export default function Home() {
       <div className="font-poppins main">
         <Navigation />
         <Header />
-        <Testimonials />
         <Newsletters />
+        <Testimonials />
         <Footer />
       </div>
     </>
