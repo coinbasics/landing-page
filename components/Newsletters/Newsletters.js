@@ -1,13 +1,12 @@
 import { ArrowRightCircleIcon } from "@heroicons/react/24/outline";
 import React from "react";
-import Button from "../Button/Button";
 
 const featuredPost = {
   id: 1,
   title: "BAYC : Racist Nazi-Inspired NFTs ?",
   href: "https://open.substack.com/pub/coinbasics/p/bayc-racist-nazi-inspired-nfts?utm_campaign=post&utm_medium=web",
   description: `A YouTuber Philion, aka Philip Rusnack has blown the lid off Bored Ape Yacht Club (BAYC)`,
-  imageUrl: "/bayc.png",
+  imageUrl: "./bayc.png",
   date: "Feb 22, 2023",
   datetime: "2023-02-22",
 };
@@ -46,21 +45,21 @@ const posts = [
 const Newsletters = () => {
   return (
     <div
-      className="pt-10 pb-16 sm:py-32"
+      className="pt-10 pb-16 sm:py-10"
       style={{ backgroundColor: "rgba(61,215,254, 0.1)" }}
     >
-      <div className="w-[90%] mx-auto">
+      <div className="w-[90%] mx-auto lg:w-full">
         <h1 className="text-3xl md:text-2xl font-bold my-8 text-black-100 ml-6 text-left capitalize">
           Read some of our best pieces
         </h1>
       </div>
-      <div className="mx-auto grid max-w-7xl grid-cols-2 gap-x-8 gap-y-12 px-6 sm:gap-y-16 lg:grid-cols-2 lg:px-8">
-        <article className="mx-auto w-full max-w-2xl lg:mx-0 lg:max-w-lg">
+      <div className="mx-auto grid max-w-7xl grid-cols-2 gap-x-8 gap-y-12 px-6 sm:gap-y-16 lg:grid-cols-1 lg:px-8">
+        <article className="mx-auto w-full max-w-2xl lg:mx-0 lg:max-w-full">
           <div className="relative w-full">
             <img
               src={featuredPost.imageUrl}
               alt=""
-              className="aspect-[3/2] w-full rounded-xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[4/2]"
+              className="aspect-[3/2] w-full rounded-xl bg-gray-100 object-cover sm:aspect-[3/2]"
             />
             <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
           </div>
@@ -91,7 +90,7 @@ const Newsletters = () => {
             </div>
           </div>
         </article>
-        <div className="mx-auto w-full max-w-2xl border-t border-gray-900/10 pt-12 sm:pt-16 lg:mx-0 lg:max-w-none lg:border-t-0 lg:pt-0">
+        <div className="mx-auto w-full max-w-2xl border-t border-gray-900/10 pt-12 sm:pt-8 lg:mx-0 lg:max-w-none lg:border-t-0 lg:pt-0">
           <div className="-my-12 divide-y divide-gray-900/10">
             {posts.map((post) => (
               <article
