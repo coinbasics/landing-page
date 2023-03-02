@@ -1,27 +1,22 @@
-import { ArrowRightCircleIcon } from "@heroicons/react/24/outline";
-import React, { useState } from "react";
-import Input from "../Input/Input";
+import React from "react";
 
 const Subscribe = () => {
-  //   const [hasSubmittedEmail, setHasSubmittedEmail] = useState(false);
-  const [email, setEmail] = useState("");
-
   return (
-    <div className="mt-10 bg-purplishblue">
-      <div className="py-24 px-6 sm:px-6 sm:py-32 lg:px-8">
+    <div className="mt-20 md:mt-10">
+      <div className="px-6 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl capitalize">
-            Start your journey with coinbasics!
+          <h2 className="mb-6 text-3xl font-bold tracking-tight bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent sm:text-3xl capitalize">
+            Start your journey with coinBasics
           </h2>
-          <div className="mt-10 flex items-center justify-center">
-            <Input
-              value={email}
-              setValue={setEmail}
-              placeholder="Enter your e-mail address"
-              type="email"
-              // hasSubmittedEmail={hasSubmittedEmail}
-              // setHasSubmittedEmail={setHasSubmittedEmail}
-            />
+          <div className="flex items-center justify-center p-4">
+            <iframe
+              src="https://www.coinbasics.xyz/embed"
+              width="1100px"
+              height="250px"
+              frameborder="0"
+              scrolling="no"
+              style={{ border: "1px solid #eee" }}
+            ></iframe>
           </div>
         </div>
       </div>

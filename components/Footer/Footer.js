@@ -7,14 +7,8 @@ const Footer = () => {
       <div className="w-full md:flex flex-col justify-center items-start hidden mb-8">
         <img src="/CB-light.png" alt="Coinbasics Logo" className="w-36 mb-4" />
         <p className="text-black-200 text-base font-normal leading-normal max-w-sm text-left mb-6">
-          Helping you navigate the ever evolving world of Web 3.
-          <br />
-          <br />
           Covering From DeFi to Daos to DApps, Apes to Airdrops, GamFi to
           Metaverse to NFT to Trades: Simplifying It All For You.
-          <br />
-          <br />
-          Start your crypto journey with CoinBasics.
         </p>
         <div className="flex space-x-5">
           <Link href="/" target="_blank">

@@ -27,7 +27,7 @@ module.exports = {
         purplishblue: "#3373FF",
         white: "#fff",
         black: {
-          100: "#111928",
+          100: "#1d1d1d",
           200: "#6b7280",
         },
       },
