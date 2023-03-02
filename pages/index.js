@@ -4,6 +4,7 @@ import Header from "../components/Header/Header";
 import Testimonials from "../components/Testimonials/Testimonials";
 import Footer from "../components/Footer/Footer";
 import Newsletters from "../components/Newsletters/Newsletters";
+import Subscribe from "../components/Subscribe/Subscribe";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <Header />
         <Newsletters />
         <Testimonials />
+        <Subscribe />
         <Footer />
       </div>
     </>

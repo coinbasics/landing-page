@@ -14,31 +14,33 @@ const featuredPost = {
 const posts = [
   {
     id: 1,
-    title: "🔥 APTOS EXPLODES by 400% in 30 days! 🚀",
-    href: "https://open.substack.com/pub/coinbasics/p/coinbasics-newsletter-9-aptos-explodes?utm_campaign=post&utm_medium=web",
-    date: "Jan 28, 2023",
-    datetime: "2023-01-28",
+    title: "$20 Million Airdrop, Crypto Go BLURRRRR!",
+    href: "https://open.substack.com/pub/coinbasics/p/20-million-airdrop-crypto-go-blurrrrr?utm_campaign=post&utm_medium=web",
+    date: "Feb 15, 2023",
+    datetime: "2023-02-15",
   },
+
   {
     id: 2,
+    title: `"Sketchy" $BTC & Ordinal PUNKS`,
+    href: "https://open.substack.com/pub/coinbasics/p/sketchy-btc-and-ordinal-punks?utm_campaign=post&utm_medium=web",
+    date: "Feb 12, 2023",
+    datetime: "2023-02-12",
+  },
+
+  {
+    id: 3,
     title: "Terra Luna USTC Pump 66%, Re-peg to $1.",
     href: "https://open.substack.com/pub/coinbasics/p/terra-luna-ustc-pump-66-re-peg-to?utm_campaign=post&utm_medium=web",
     date: "Feb 03, 2023",
     datetime: "2023-02-03",
   },
   {
-    id: 3,
-    title: `"Sketchy" $BTC & Ordinal PUNKS`,
-    href: "https://open.substack.com/pub/coinbasics/p/sketchy-btc-and-ordinal-punks?utm_campaign=post&utm_medium=web",
-    date: "Feb 12, 2023",
-    datetime: "2023-02-12",
-  },
-  {
     id: 4,
-    title: "$20 Million Airdrop, Crypto Go BLURRRRR!",
-    href: "https://open.substack.com/pub/coinbasics/p/20-million-airdrop-crypto-go-blurrrrr?utm_campaign=post&utm_medium=web",
-    date: "Feb 15, 2023",
-    datetime: "2023-02-15",
+    title: "🔥 APTOS EXPLODES by 400% in 30 days! 🚀",
+    href: "https://open.substack.com/pub/coinbasics/p/coinbasics-newsletter-9-aptos-explodes?utm_campaign=post&utm_medium=web",
+    date: "Jan 28, 2023",
+    datetime: "2023-01-28",
   },
 ];
 
@@ -49,7 +51,7 @@ const Newsletters = () => {
       style={{ backgroundColor: "rgba(61,215,254, 0.1)" }}
     >
       <div className="w-[90%] mx-auto lg:w-full">
-        <h1 className="text-3xl md:text-2xl font-bold my-8 text-black-100 ml-6 text-left capitalize">
+        <h1 className="text-3xl md:text-xl font-bold my-8 text-black-100 ml-6 text-left md:text-center md:ml-0 capitalize">
           Read some of our best pieces
         </h1>
       </div>
@@ -71,18 +73,18 @@ const Newsletters = () => {
           </time>
           <h2
             id="featured-post"
-            className="mt-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+            className="mt-4 text-3xl md:text-xl font-bold tracking-tight text-gray-900"
           >
             {featuredPost.title}
           </h2>
-          <p className="mt-4 text-lg leading-8 text-gray-600">
+          <p className="mt-4 text-lg md:text-sm leading-8 text-gray-600">
             {featuredPost.description}
           </p>
           <div className="mt-4 flex flex-col justify-between gap-6 sm:mt-8 sm:flex-row-reverse sm:gap-8 lg:mt-4 lg:flex-col">
             <div className="flex">
               <a
                 href={featuredPost.href}
-                className="text-sm font-semibold leading-6 text-indigo-600"
+                className="text-sm font-semibold leading-6 text-primary"
                 aria-describedby="featured-post"
               >
                 Continue reading <span aria-hidden="true">&rarr;</span>
@@ -90,12 +92,12 @@ const Newsletters = () => {
             </div>
           </div>
         </article>
-        <div className="mx-auto w-full max-w-2xl border-t border-gray-900/10 pt-12 sm:pt-8 lg:mx-0 lg:max-w-none lg:border-t-0 lg:pt-0">
+        <div className="mx-auto w-full max-w-2xl border-t border-gray-900/10 pt-12 sm:pt-6 lg:mx-0 lg:max-w-none lg:border-t-0 lg:pt-0">
           <div className="-my-12 divide-y divide-gray-900/10">
             {posts.map((post) => (
               <article
                 key={post.id}
-                className="py-10 flex justify-between items-end"
+                className="py-10 flex justify-between items-end md:py-6"
               >
                 <div className="group relative max-w-xl">
                   <time
@@ -104,7 +106,7 @@ const Newsletters = () => {
                   >
                     {post.date}
                   </time>
-                  <h2 className="mt-2 text-lg font-semibold text-gray-900 group-hover:text-gray-600">
+                  <h2 className="mt-2 text-lg md:text-sm font-semibold text-gray-900 group-hover:text-gray-600">
                     <a href={post.href}>
                       <span className="absolute inset-0" />
                       {post.title}
