@@ -21,7 +21,7 @@ const HomeHeader = () => {
         </p>
 
         <iframe
-          src="https://www.coinbasics.xyz/embed"
+          src="https://coinbasics.substack.com/embed"
           width="400px"
           height="100px"
           className="-ml-12 text-left align-left block"

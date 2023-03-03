@@ -10,7 +10,7 @@ const Subscribe = () => {
           </h2>
           <div className="flex items-center justify-center p-4">
             <iframe
-              src="https://www.coinbasics.xyz/embed"
+              src="https://coinbasics.substack.com/embed"
               width="1100px"
               height="250px"
               frameborder="0"
