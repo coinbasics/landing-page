@@ -81,7 +81,7 @@ const Navigation = () => {
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
-                href="https://www.coinbasics.xyz/?utm_source=substack&utm_medium=web&utm_campaign=substack_profile"
+                href="https://coinbasics.substack.com/"
                 className="block border-l-4 border-transparent py-2 pl-6 pr-4 text-base font-medium text-gray-500"
                 target="_blank"
               >
