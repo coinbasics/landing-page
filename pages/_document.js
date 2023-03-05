@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/next-script-for-ga */
 /* eslint-disable @next/next/no-title-in-document-head */
 import { Html, Head, Main, NextScript } from "next/document";
+import Script from "next/script";
 
 export default function Document() {
   return (
@@ -19,7 +20,7 @@ export default function Document() {
         {/* Google tag (gtag.js)  */}
         <script
           async
-          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.G_ANALYTICS_ID}`}
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_G_ANALYTICS_ID}`}
         ></script>
         <script
           dangerouslySetInnerHTML={{
@@ -27,7 +28,7 @@ export default function Document() {
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
-                gtag('config', ${process.env.G_ANALYTICS_ID} );
+                gtag('config', '${process.env.NEXT_PUBLIC_G_ANALYTICS_ID}' );
               `,
           }}
         ></script>
@@ -35,6 +36,10 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
+        <Script
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_G_ANALYTICS_ID}`}
+        />
       </body>
     </Html>
   );
