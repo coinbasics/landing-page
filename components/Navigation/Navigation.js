@@ -47,7 +47,7 @@ const Navigation = () => {
                   </Link>
                   <Link
                     className="inline-flex items-center px-1 pt-1 text-gray-700 rounded md:p-0"
-                    href="https://www.coinbasics.xyz/?utm_source=substack&utm_medium=web&utm_campaign=substack_profile"
+                    href="https://coinbasics.substack.com/"
                     target="_blank"
                   >
                     Newsletters{" "}
