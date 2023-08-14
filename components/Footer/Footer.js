@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="bg-white px-20 py-16 md:px-8">
       <div className="w-full md:flex flex-col justify-center items-start hidden mb-8">
-        <img src="/CB-light.png" alt="Coinbasics Logo" className="w-36 mb-4" />
+        <img src="/CB-Light.png" alt="Coinbasics Logo" className="w-36 mb-4" />
         <p className="text-black-200 text-base font-normal leading-normal max-w-sm text-left mb-6">
           Covering From DeFi to Daos to DApps, Apes to Airdrops, GamFi to
           Metaverse to NFT to Trades: Simplifying It All For You.
@@ -21,7 +21,7 @@ const Footer = () => {
       </div>
       <div className="w-full flex flex-col justify-center items-center md:items-start">
         <img
-          src="/CB-light.png"
+          src="/CB-Light.png"
           alt="Coinbasics Logo"
           className="w-36 mb-4 md:hidden"
         />
