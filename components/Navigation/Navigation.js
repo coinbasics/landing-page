@@ -31,7 +31,7 @@ const Navigation = () => {
                 <div className="flex flex-shrink-0 items-center">
                   <img
                     className="block h-10 md:h-8 w-auto"
-                    src="/CB-light.png"
+                    src="/CB-Light.png"
                     alt="Coinbasics Logo"
                   />
                 </div>
